@@ -180,12 +180,38 @@ boolean Add , Subtract , Multiply , Divide ;
             }
         });
 
+bEqual.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        res2 = Float.parseFloat(ed1.getText()+ "");
+        if(Add==true){
+            ed1.setText(res1 + res2 + "");
+            Add=false ;
+        }
+        if(Subtract==true){
+            ed1.setText(res1 - res2 + "");
+            Subtract=false ;
+        }
+        if(Multiply==true){
+            ed1.setText(res1 * res2 + "");
+            Multiply=false ;
+        }
+        if(Divide==true){
+            ed1.setText(res1 / res2 + "");
+            Divide=false ;
+        }
+    }
+});
+
+
+bClear.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        ed1.setText("");
+    }
+});
 
 
 
-
-
-
-        
     }
 }
