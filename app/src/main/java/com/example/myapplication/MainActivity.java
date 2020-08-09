@@ -10,7 +10,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 Button b1, b2 , b3 , b4 , b5 , b6 , b7 , b8 , b9 , b0 , bAdd , bSubtract , bMultiply , bDivide , bEqual , bDot ;
 Button bClear ;
-EditText ed1 ;
+EditText edit_text ;
 float res1 , res2 ;
 boolean Add , Subtract , Multiply , Divide ;
 
@@ -39,7 +39,7 @@ boolean Add , Subtract , Multiply , Divide ;
         bDot = (Button)findViewById(R.id.bDot);
         bClear = (Button)findViewById(R.id.bClear);
         bEqual = (Button)findViewById(R.id.bEqual);
-        ed1 = (EditText)findViewById(R.id.editText2);
+        edit_text = (EditText)findViewById(R.id.editText2);
 
         // now for action on click
 
@@ -47,7 +47,7 @@ boolean Add , Subtract , Multiply , Divide ;
             @Override
             public void onClick(View v) {
                 // setting the value 1 whatever you put in the edit box
-                ed1.setText(ed1.getText() + "1");
+                edit_text.setText(edit_text.getText() + "1");
             }
         });
 
@@ -55,70 +55,70 @@ boolean Add , Subtract , Multiply , Divide ;
             @Override
             public void onClick(View v) {
                 // setting the value 1 whatever you put in the edit box
-                ed1.setText(ed1.getText() + "2");
+                edit_text.setText(edit_text.getText() + "2");
             }
         });
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // setting the value 1 whatever you put in the edit box
-                ed1.setText(ed1.getText() + "3");
+                edit_text.setText(edit_text.getText() + "3");
             }
         });
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // setting the value 1 whatever you put in the edit box
-                ed1.setText(ed1.getText() + "4");
+                edit_text.setText(edit_text.getText() + "4");
             }
         });
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // setting the value 1 whatever you put in the edit box
-                ed1.setText(ed1.getText() + "5");
+                edit_text.setText(edit_text.getText() + "5");
             }
         });
         b6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // setting the value 1 whatever you put in the edit box
-                ed1.setText(ed1.getText() + "6");
+                edit_text.setText(edit_text.getText() + "6");
             }
         });
         b7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // setting the value 1 whatever you put in the edit box
-                ed1.setText(ed1.getText() + "7");
+                edit_text.setText(edit_text.getText() + "7");
             }
         });
         b8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // setting the value 1 whatever you put in the edit box
-                ed1.setText(ed1.getText() + "8");
+                edit_text.setText(edit_text.getText() + "8");
             }
         });
         b9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // setting the value 1 whatever you put in the edit box
-                ed1.setText(ed1.getText() + "9");
+                edit_text.setText(edit_text.getText() + "9");
             }
         });
         b0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // setting the value 1 whatever you put in the edit box
-                ed1.setText(ed1.getText() + "0");
+                edit_text.setText(edit_text.getText() + "0");
             }
         });
         bDot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // setting the value 1 whatever you put in the edit box
-                ed1.setText(ed1.getText() + ".");
+                edit_text.setText(edit_text.getText() + ".");
             }
         });
 
@@ -126,14 +126,14 @@ boolean Add , Subtract , Multiply , Divide ;
         bAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(ed1==null){
-                    ed1.setText("");
+                if(edit_text==null){
+                    edit_text.setText("");
                 }
                 else{
-                    res1 = Float.parseFloat(ed1.getText() + "");
+                    res1 = Float.parseFloat(edit_text.getText() + "");
                     // now when '+' pressed then the text box empty & the variable stored in 'Add' ...
                     Add = true;
-                    ed1.setText(null);
+                    edit_text.setText(null);
                 }
             }
         });
@@ -141,13 +141,13 @@ boolean Add , Subtract , Multiply , Divide ;
         bSubtract.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(ed1==null){
-                    ed1.setText("");
+                if(edit_text==null){
+                    edit_text.setText("");
                 }
                 else{
-                    res1 = Float.parseFloat(ed1.getText() + "");
+                    res1 = Float.parseFloat(edit_text.getText() + "");
                     Subtract = true;
-                    ed1.setText(null);
+                    edit_text.setText(null);
                 }
             }
         });
@@ -155,13 +155,13 @@ boolean Add , Subtract , Multiply , Divide ;
         bMultiply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(ed1==null){
-                    ed1.setText("");
+                if(edit_text==null){
+                    edit_text.setText("");
                 }
                 else{
-                    res1 = Float.parseFloat(ed1.getText() + "");
+                    res1 = Float.parseFloat(edit_text.getText() + "");
                     Multiply = true;
-                    ed1.setText(null);
+                    edit_text.setText(null);
                 }
             }
         });
@@ -169,13 +169,13 @@ boolean Add , Subtract , Multiply , Divide ;
         bDivide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(ed1==null){
-                    ed1.setText("");
+                if(edit_text==null){
+                    edit_text.setText("");
                 }
                 else{
-                    res1 = Float.parseFloat(ed1.getText() + "");
+                    res1 = Float.parseFloat(edit_text.getText() + "");
                     Divide = true;
-                    ed1.setText(null);
+                    edit_text.setText(null);
                 }
             }
         });
@@ -183,21 +183,21 @@ boolean Add , Subtract , Multiply , Divide ;
 bEqual.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        res2 = Float.parseFloat(ed1.getText()+ "");
+        res2 = Float.parseFloat(edit_text.getText()+ "");
         if(Add==true){
-            ed1.setText(res1 + res2 + "");
+            edit_text.setText(res1 + res2 + "");
             Add=false ;
         }
         if(Subtract==true){
-            ed1.setText(res1 - res2 + "");
+            edit_text.setText(res1 - res2 + "");
             Subtract=false ;
         }
         if(Multiply==true){
-            ed1.setText(res1 * res2 + "");
+            edit_text.setText(res1 * res2 + "");
             Multiply=false ;
         }
         if(Divide==true){
-            ed1.setText(res1 / res2 + "");
+            edit_text.setText(res1 / res2 + "");
             Divide=false ;
         }
     }
@@ -207,7 +207,7 @@ bEqual.setOnClickListener(new View.OnClickListener() {
 bClear.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        ed1.setText("");
+        edit_text.setText("");
     }
 });
 
