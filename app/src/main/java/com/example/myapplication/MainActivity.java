@@ -20,6 +20,7 @@ boolean Add , Sub , Mul , Div ;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//        we have noew
         b1 = (Button)findViewById(R.id.b1);
         b2 = (Button)findViewById(R.id.b2);
         b3 = (Button)findViewById(R.id.b3);
