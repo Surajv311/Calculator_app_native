@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B0FFA2"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="168dp"
         android:layout_marginLeft="168dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="184dp"
         android:layout_marginRight="184dp"
         android:text="Calculator App"
@@ -21,7 +22,7 @@
         android:textStyle="bold"
         app:fontFamily="sans-serif-black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintHorizontal_bias="0.391"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,6 +47,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:text="1"
+        android:textColorHighlight="#2E1F1F"
+        android:textColorHint="#9AFFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/b2"
         app:layout_constraintHorizontal_bias="0.5"
@@ -70,6 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:text="3"
+        android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/bAdd"
         app:layout_constraintHorizontal_bias="0.5"
@@ -234,8 +239,8 @@
 
     <Button
         android:id="@+id/bClear"
-        android:layout_width="387dp"
-        android:layout_height="45dp"
+        android:layout_width="378dp"
+        android:layout_height="53dp"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
         android:layout_marginTop="33dp"
@@ -248,4 +253,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bDot" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="153dp"
+        android:layout_marginLeft="153dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginRight="152dp"
+        android:layout_marginBottom="29dp"
+        android:text="© 2020 app_Dev"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bClear" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
