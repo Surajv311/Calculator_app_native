@@ -1,6 +1,6 @@
 # Calculator_app_native
 
-A simple calculator app built purely on **Java** using And.Studio.<br>
+A simple calculator app built on **Java** using And.Studio.<br>
 
 Native app.<br>
 
